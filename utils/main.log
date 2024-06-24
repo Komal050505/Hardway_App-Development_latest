@@ -1,0 +1,4 @@
+2024-06-23 23:02:31,748 - INFO - Mobile verification is successful
+2024-06-23 23:02:31,748 - DEBUG - Get method entered with record {'mobile': 915421215452}
+2024-06-23 23:02:31,748 - INFO - Mobile verification is successful
+2024-06-23 23:02:31,748 - INFO - User details found -->> {'mobile': 915421215452, 'name': 'Komal', 'company': 'APPLE'}

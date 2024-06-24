@@ -1,0 +1,353 @@
+2024-06-23 23:03:26,723 - INFO - Mobile verification is successful
+2024-06-23 23:03:26,723 - DEBUG - Get method entered with record {'mobile': 915421215452}
+2024-06-23 23:03:26,723 - INFO - Mobile verification is successful
+2024-06-23 23:03:26,723 - INFO - User details found -->> {'mobile': 915421215452, 'name': 'Komal', 'company': 'APPLE'}
+2024-06-23 23:03:49,344 - INFO - Mobile verification is successful
+2024-06-23 23:03:49,345 - DEBUG - Get method entered with record {'mobile': 915421215452}
+2024-06-23 23:03:49,345 - INFO - Mobile verification is successful
+2024-06-23 23:03:49,345 - INFO - User details found -->> {'mobile': 915421215452, 'name': 'Komal', 'company': 'APPLE'}
+2024-06-23 23:04:21,836 - INFO - Mobile verification is successful
+2024-06-23 23:04:21,839 - DEBUG - Get method entered with record {'mobile': 915421215452}
+2024-06-23 23:04:21,839 - INFO - Mobile verification is successful
+2024-06-23 23:04:21,839 - INFO - User details found -->> {'mobile': 915421215452, 'name': 'Komal', 'company': 'APPLE'}
+2024-06-23 23:04:25,315 - INFO - Mobile verification is successful
+2024-06-23 23:04:25,315 - DEBUG - Get method entered with record {'mobile': 915421215452}
+2024-06-23 23:04:25,315 - INFO - Mobile verification is successful
+2024-06-23 23:04:25,315 - INFO - User details found -->> {'mobile': 915421215452, 'name': 'Komal', 'company': 'APPLE'}
+2024-06-23 23:04:27,255 - INFO - Mobile verification is successful
+2024-06-23 23:04:27,255 - DEBUG - Get method entered with record {'mobile': 915421215452}
+2024-06-23 23:04:27,255 - INFO - Mobile verification is successful
+2024-06-23 23:04:27,255 - INFO - User details found -->> {'mobile': 915421215452, 'name': 'Komal', 'company': 'APPLE'}
+2024-06-23 23:05:41,275 - INFO - Mobile verification is successful
+2024-06-23 23:05:41,275 - DEBUG - Get method entered with record {'mobile': 915421215452}
+2024-06-23 23:05:41,275 - INFO - Mobile verification is successful
+2024-06-23 23:05:41,275 - INFO - User details found -->> {'mobile': 915421215452, 'name': 'Komal', 'company': 'APPLE'}
+2024-06-23 23:06:15,959 - INFO - Mobile verification is successful
+2024-06-23 23:13:30,560 - DEBUG - POST method entered with record {'mobile': 914234123456, 'name': 'Queen', 'company': 'ABC'}
+2024-06-23 23:13:30,560 - INFO - Mobile verification is successful
+2024-06-23 23:13:30,560 - INFO - Record successfully inserted: {'mobile': 914234123456, 'name': 'Queen', 'company': 'ABC'}
+2024-06-23 23:13:30,560 - DEBUG - Get method entered with record {'mobile': 915421215452}
+2024-06-23 23:13:30,560 - INFO - Mobile verification is successful
+2024-06-23 23:13:30,560 - INFO - User details found -->> {'mobile': 915421215452, 'name': 'Komal', 'company': 'APPLE'}
+2024-06-23 23:23:10,574 - DEBUG - POST method entered with record {'mobile': 914234123456, 'name': 'Queen', 'company': 'ABC'}
+2024-06-23 23:23:10,574 - INFO - Mobile verification is successful
+2024-06-23 23:23:10,574 - INFO - Record successfully inserted: {'mobile': 914234123456, 'name': 'Queen', 'company': 'ABC'}
+2024-06-23 23:23:10,574 - DEBUG - Get method entered with record {'mobile': 915421215452}
+2024-06-23 23:23:10,574 - INFO - Mobile verification is successful
+2024-06-23 23:23:10,574 - INFO - User details found -->> {'mobile': 915421215452, 'name': 'Komal', 'company': 'APPLE'}
+2024-06-23 23:23:10,574 - DEBUG - Get method entered with record {'mobile': 915421215451}
+2024-06-23 23:23:10,574 - INFO - Mobile verification is successful
+2024-06-23 23:23:10,574 - WARNING - No user details found for mobile number 915421215451.
+2024-06-23 23:23:51,511 - DEBUG - POST method entered with record {'mobile': 914234123456, 'name': 'Queen', 'company': 'ABC'}
+2024-06-23 23:23:51,511 - INFO - Mobile verification is successful
+2024-06-23 23:23:51,511 - INFO - Record successfully inserted: {'mobile': 914234123456, 'name': 'Queen', 'company': 'ABC'}
+2024-06-23 23:23:51,512 - DEBUG - Get method entered with record {'mobile': 915421215452}
+2024-06-23 23:23:51,512 - INFO - Mobile verification is successful
+2024-06-23 23:23:51,512 - INFO - User details found -->> {'mobile': 915421215452, 'name': 'Komal', 'company': 'APPLE'}
+2024-06-23 23:23:51,512 - DEBUG - Get method entered with record {'mobile': 915421215451}
+2024-06-23 23:23:51,512 - INFO - Mobile verification is successful
+2024-06-23 23:23:51,512 - WARNING - No user details found for mobile number 915421215451.
+2024-06-23 23:24:48,336 - DEBUG - DELETE method entered with record {'mobile': 915421215451}
+2024-06-23 23:24:48,336 - INFO - Mobile verification is successful
+2024-06-23 23:24:48,336 - WARNING - No user details found for mobile number 915421215451 so DELETION is not possible.
+2024-06-23 23:27:15,661 - DEBUG - POST method entered with record {'mobile': 914234123456, 'name': 'Queen', 'company': 'ABC'}
+2024-06-23 23:27:15,661 - INFO - Mobile verification is successful
+2024-06-23 23:27:15,661 - INFO - Record successfully inserted using POST METHOD: {'mobile': 914234123456, 'name': 'Queen', 'company': 'ABC'}
+2024-06-23 23:27:15,661 - DEBUG - Get method entered with record {'mobile': 915421215452}
+2024-06-23 23:27:15,661 - INFO - Mobile verification is successful
+2024-06-23 23:27:15,661 - INFO - User details found -->> {'mobile': 915421215452, 'name': 'Komal', 'company': 'APPLE'}
+2024-06-23 23:27:15,661 - DEBUG - DELETE method entered with record {'mobile': 915421215451}
+2024-06-23 23:27:15,661 - INFO - Mobile verification is successful
+2024-06-23 23:27:15,661 - WARNING - No user details found for mobile number 915421215451 so DELETION is not possible.
+2024-06-23 23:31:49,956 - DEBUG - POST METHOD entered with record {'mobile': 914234123456, 'name': 'Queen', 'company': 'ABC'}
+2024-06-23 23:31:49,956 - INFO - Mobile verification is successful
+2024-06-23 23:31:49,956 - INFO - Record successfully inserted using POST METHOD: {'mobile': 914234123456, 'name': 'Queen', 'company': 'ABC'}
+2024-06-23 23:31:49,957 - DEBUG - GET METHOD entered with record {'mobile': 915421215452}
+2024-06-23 23:31:49,957 - INFO - Mobile verification is successful
+2024-06-23 23:31:49,957 - INFO - User details found -->> {'mobile': 915421215452, 'name': 'Komal', 'company': 'APPLE'}
+2024-06-23 23:31:49,957 - DEBUG - DELETE method entered with record {'mobile': 915421215451}
+2024-06-23 23:31:49,957 - INFO - Mobile verification is successful
+2024-06-23 23:31:49,957 - WARNING - No user details found for mobile number 915421215451 so DELETION is not possible.
+2024-06-23 23:48:08,748 - DEBUG - POST METHOD entered with record {'mobile': 914234123456, 'name': 'Queen', 'company': 'ABC'}
+2024-06-23 23:48:08,748 - INFO - Mobile verification is successful
+2024-06-23 23:48:08,749 - INFO - Record successfully inserted using POST METHOD: {'mobile': 914234123456, 'name': 'Queen', 'company': 'ABC'}
+2024-06-23 23:48:08,749 - DEBUG - GET METHOD entered with record {'mobile': 915421215452}
+2024-06-23 23:48:08,749 - INFO - Mobile verification is successful
+2024-06-23 23:48:08,749 - INFO - User details found -->> {'mobile': 915421215452, 'name': 'Komal', 'company': 'APPLE'}
+2024-06-23 23:48:08,749 - DEBUG - DELETE method entered with record {'mobile': 915421215451}
+2024-06-23 23:48:08,749 - INFO - Mobile verification is successful
+2024-06-23 23:48:08,749 - WARNING - No user details found for mobile number 915421215451 so DELETION is not possible.
+2024-06-24 14:10:33,984 - DEBUG - POST METHOD entered with record {'mobile': 914234123456, 'name': 'Queen', 'company': 'ABC'}
+2024-06-24 14:10:33,984 - INFO - Mobile verification is successful
+2024-06-24 14:10:33,985 - INFO - Record successfully inserted using POST METHOD: {'mobile': 914234123456, 'name': 'Queen', 'company': 'ABC'}
+2024-06-24 14:10:33,985 - DEBUG - GET METHOD entered with record {'mobile': 915421215452}
+2024-06-24 14:10:33,985 - INFO - Mobile verification is successful
+2024-06-24 14:10:33,985 - INFO - User details found -->> {'mobile': 915421215452, 'name': 'Komal', 'company': 'APPLE'}
+2024-06-24 14:10:33,985 - DEBUG - DELETE method entered with record {'mobile': 915421215451}
+2024-06-24 14:10:33,985 - INFO - Mobile verification is successful
+2024-06-24 14:10:33,985 - WARNING - No user details found for mobile number 915421215451 so DELETION is not possible.
+2024-06-24 14:39:38,480 - DEBUG - POST METHOD entered with record {'mobile': 914234123456, 'name': 'Queen', 'company': 'ABC'}
+2024-06-24 14:39:38,480 - INFO - Record successfully inserted using POST METHOD: {'mobile': 914234123456, 'name': 'Queen', 'company': 'ABC'}
+2024-06-24 14:39:38,480 - DEBUG - GET METHOD entered with record {'mobile': 915421215452}
+2024-06-24 14:39:38,481 - INFO - User details found -->> {'mobile': 915421215452, 'name': 'Komal', 'company': 'APPLE'}
+2024-06-24 14:39:38,481 - DEBUG - DELETE method entered with record {'mobile': 915421215451}
+2024-06-24 14:39:38,481 - WARNING - No user details found for mobile number 915421215451 so DELETION is not possible.
+2024-06-24 14:43:12,205 - DEBUG - POST METHOD entered with record {'mobile': 914234123456, 'name': 'Queen', 'company': 'ABC'}
+2024-06-24 14:43:12,206 - INFO - Record successfully inserted using POST METHOD: {'mobile': 914234123456, 'name': 'Queen', 'company': 'ABC'}
+2024-06-24 14:44:04,045 - DEBUG - POST METHOD entered with record {'mobile': 914230210020, 'name': 'Arjun', 'company': 'XYZ'}
+2024-06-24 14:44:04,045 - INFO - Record successfully inserted using POST METHOD: {'mobile': 914230210020, 'name': 'Arjun', 'company': 'XYZ'}
+2024-06-24 14:44:56,314 - DEBUG - POST METHOD entered with record {'mobile': 914230210020, 'name': 'Arjun', 'company': 'XYZ'}
+2024-06-24 14:44:56,314 - INFO - Mobile verification is successful
+2024-06-24 14:44:56,314 - INFO - Record successfully inserted using POST METHOD: {'mobile': 914230210020, 'name': 'Arjun', 'company': 'XYZ'}
+2024-06-24 14:49:18,999 - DEBUG - POST METHOD entered with record {'mobile': 914230210020, 'name': 'Arjun', 'company': 'XYZ'}
+2024-06-24 14:49:18,999 - INFO - Mobile verification is successful
+2024-06-24 14:49:18,999 - INFO - Record successfully inserted using POST METHOD: {'mobile': 914230210020, 'name': 'Arjun', 'company': 'XYZ'}
+2024-06-24 14:50:08,300 - DEBUG - POST METHOD entered with record {'mobile': 564230210020, 'name': 'Ram', 'company': 'XYZ'}
+2024-06-24 14:50:08,300 - INFO - Mobile verification is successful
+2024-06-24 14:50:08,300 - INFO - Record successfully inserted using POST METHOD: {'mobile': 564230210020, 'name': 'Ram', 'company': 'XYZ'}
+2024-06-24 14:50:37,134 - DEBUG - POST METHOD entered with record {'mobile': 554230210020, 'name': 'Ram', 'company': 'XYZ'}
+2024-06-24 14:50:37,134 - ERROR - Error inserting record: Invalid country code - 55 which is not in ['91', '45', '67', '56'] using POST METHOD
+2024-06-24 14:51:39,192 - DEBUG - POST METHOD entered with record {'mobile': 564230210020, 'name': 'Ram', 'company': 'XYZ'}
+2024-06-24 14:51:39,192 - INFO - Mobile verification is successful
+2024-06-24 14:51:39,192 - INFO - Record successfully inserted using POST METHOD: {'mobile': 564230210020, 'name': 'Ram', 'company': 'XYZ'}
+2024-06-24 14:51:46,798 - DEBUG - POST METHOD entered with record {'mobile': 564230210020, 'name': 'Ram', 'company': 'XYZ'}
+2024-06-24 14:51:46,798 - INFO - Mobile verification is successful
+2024-06-24 14:51:46,798 - INFO - Record successfully inserted using POST METHOD: {'mobile': 564230210020, 'name': 'Ram', 'company': 'XYZ'}
+2024-06-24 14:52:23,897 - DEBUG - POST METHOD entered with record {'mobile': 564230210020, 'name': 'Ram', 'company': 'XYZ'}
+2024-06-24 14:52:23,897 - INFO - Mobile verification is successful
+2024-06-24 14:52:23,897 - INFO - Record successfully inserted using POST METHOD: {'mobile': 564230210020, 'name': 'Ram', 'company': 'XYZ'}
+2024-06-24 14:56:28,624 - DEBUG - POST METHOD entered with record {'mobile': 564230210020, 'name': 'Ram', 'company': 'XYZ'}
+2024-06-24 14:56:28,625 - INFO - Mobile verification is successful
+2024-06-24 14:56:28,625 - INFO - Record successfully inserted using POST METHOD: {'mobile': 564230210020, 'name': 'Ram', 'company': 'XYZ'}
+2024-06-24 14:56:48,114 - DEBUG - POST METHOD entered with record {'mobile': 564230210020, 'name': 'Ram', 'company': 'XYZ'}
+2024-06-24 14:56:48,114 - INFO - Mobile verification is successful
+2024-06-24 14:56:48,114 - INFO - Record successfully inserted using POST METHOD: {'mobile': 564230210020, 'name': 'Ram', 'company': 'XYZ'}
+2024-06-24 14:58:07,139 - DEBUG - POST METHOD entered with record {'mobile': 914111111111, 'name': 'Suresh', 'company': 'MIND TREE'}
+2024-06-24 14:58:07,140 - INFO - Mobile verification is successful
+2024-06-24 14:58:07,140 - INFO - Record successfully inserted using POST METHOD: {'mobile': 914111111111, 'name': 'Suresh', 'company': 'MIND TREE'}
+2024-06-24 14:58:19,578 - DEBUG - POST METHOD entered with record {'mobile': 914111111111, 'name': 'Suresh', 'company': 'MIND TREE'}
+2024-06-24 14:58:19,578 - INFO - Mobile verification is successful
+2024-06-24 14:58:19,578 - INFO - Record successfully inserted using POST METHOD: {'mobile': 914111111111, 'name': 'Suresh', 'company': 'MIND TREE'}
+2024-06-24 14:59:16,817 - DEBUG - POST METHOD entered with record {'mobile': 914111111111, 'name': 'Suresh', 'company': 'MIND TREE'}
+2024-06-24 14:59:16,817 - INFO - Mobile verification is successful
+2024-06-24 14:59:16,817 - INFO - Record successfully inserted using POST METHOD: {'mobile': 914111111111, 'name': 'Suresh', 'company': 'MIND TREE'}
+2024-06-24 15:21:13,410 - DEBUG - POST METHOD entered with record {'mobile': 914111111111, 'name': 'Suresh', 'company': 'MIND TREE'}
+2024-06-24 15:21:13,411 - INFO - Mobile verification is successful
+2024-06-24 15:21:13,411 - INFO - Record successfully inserted using POST METHOD: {'mobile': 914111111111, 'name': 'Suresh', 'company': 'MIND TREE'}
+2024-06-24 15:21:19,978 - DEBUG - POST METHOD entered with record {'mobile': 914111111111, 'name': 'Suresh', 'company': 'MIND TREE'}
+2024-06-24 15:21:19,979 - INFO - Mobile verification is successful
+2024-06-24 15:21:19,979 - INFO - Record successfully inserted using POST METHOD: {'mobile': 914111111111, 'name': 'Suresh', 'company': 'MIND TREE'}
+2024-06-24 15:21:49,865 - DEBUG - POST METHOD entered with record {'mobile': 914111111111, 'name': 'Suresh', 'company': 'MIND TREE'}
+2024-06-24 15:21:49,867 - INFO - Mobile verification is successful
+2024-06-24 15:21:49,868 - INFO - Record successfully inserted using POST METHOD: {'mobile': 914111111111, 'name': 'Suresh', 'company': 'MIND TREE'}
+2024-06-24 15:23:52,354 - DEBUG - POST METHOD entered with record {'mobile': 914111111111, 'name': 'Suresh', 'company': 'MIND TREE'}
+2024-06-24 15:23:52,355 - INFO - Mobile verification is successful
+2024-06-24 15:23:52,357 - INFO - Mobile verification is successful
+2024-06-24 15:23:52,357 - INFO - Record successfully inserted using POST METHOD: {'mobile': 914111111111, 'name': 'Suresh', 'company': 'MIND TREE'}
+2024-06-24 15:26:14,764 - DEBUG - POST METHOD entered with record {'mobile': 914111111111, 'name': 'Suresh', 'company': 'MIND TREE'}
+2024-06-24 15:26:14,765 - INFO - Mobile verification is successful
+2024-06-24 15:26:14,765 - INFO - Mobile verification is successful
+2024-06-24 15:26:14,765 - INFO - Record successfully inserted using POST METHOD: {'mobile': 914111111111, 'name': 'Suresh', 'company': 'MIND TREE'}
+2024-06-24 15:27:46,002 - DEBUG - POST METHOD entered with record {'mobile': 914111111111, 'name': 'Suresh', 'company': 'MIND TREE'}
+2024-06-24 15:27:46,003 - INFO - Mobile verification is successful
+2024-06-24 15:27:46,003 - INFO - Mobile verification is successful
+2024-06-24 15:27:46,003 - INFO - Mobile verification is successful
+2024-06-24 15:27:46,004 - INFO - Record successfully inserted using POST METHOD: {'mobile': 914111111111, 'name': 'Suresh', 'company': 'MIND TREE'}
+2024-06-24 15:29:15,941 - DEBUG - POST METHOD entered with record {'mobile': 914111111111, 'name': 'Suresh', 'company': 'MIND TREE'}
+2024-06-24 15:29:15,941 - INFO - Mobile verification is successful
+2024-06-24 15:29:15,942 - ERROR - {'mobile': 914111111111, 'name': 'Suresh', 'company': 'MIND TREE'} Record already exists, please enter new record details using POST METHOD
+2024-06-24 16:23:51,332 - DEBUG - POST METHOD entered with record {'mobile': 914111111111, 'name': 'Suresh', 'company': 'MIND TREE'}
+2024-06-24 16:23:51,333 - INFO - Mobile verification is successful
+2024-06-24 16:23:51,333 - ERROR - {'mobile': 914111111111, 'name': 'Suresh', 'company': 'MIND TREE'} Record already exists, please enter new record details using POST METHOD
+2024-06-24 16:24:44,885 - DEBUG - POST METHOD entered with record {'mobile': 914111111111, 'name': 'Suresh', 'company': 'MIND TREE'}
+2024-06-24 16:24:44,885 - INFO - Mobile verification is successful
+2024-06-24 16:24:44,885 - WARNING - {'mobile': 914111111111, 'name': 'Suresh', 'company': 'MIND TREE'} Record already exists, please enter new record details using POST METHOD
+2024-06-24 16:25:46,172 - DEBUG - POST METHOD entered with record {'mobile': 914111111111, 'name': 'Suresh', 'company': 'MIND TREE'}
+2024-06-24 16:25:46,172 - WARNING - {'mobile': 914111111111, 'name': 'Suresh', 'company': 'MIND TREE'} Record already exists, please enter new record details using POST METHOD
+2024-06-24 16:26:04,709 - DEBUG - POST METHOD entered with record {'mobile': 914111111111, 'name': 'Suresh', 'company': 'MIND TREE'}
+2024-06-24 16:26:04,709 - WARNING - {'mobile': 914111111111, 'name': 'Suresh', 'company': 'MIND TREE'} Record already exists, please enter new record details using POST METHOD
+2024-06-24 16:26:43,657 - DEBUG - POST METHOD entered with record {'mobile': 914111111111, 'name': 'Suresh', 'company': 'MIND TREE'}
+2024-06-24 16:26:43,658 - WARNING - {'mobile': 914111111111, 'name': 'Suresh', 'company': 'MIND TREE'} Record already exists, please enter new record details using POST METHOD
+2024-06-24 16:37:14,240 - DEBUG - GET METHOD entered with record {'mobile': 915421215452}
+2024-06-24 16:37:30,175 - DEBUG - GET METHOD entered with record {'mobile': 915421215452}
+2024-06-24 16:37:30,175 - INFO - Mobile verification is successful
+2024-06-24 16:37:30,176 - INFO - User details found -->> {'mobile': 915421215452, 'name': 'Komal', 'company': 'APPLE'}
+2024-06-24 16:39:19,195 - DEBUG - GET METHOD entered with record {'mobile': 915421215452}
+2024-06-24 16:39:19,195 - INFO - Mobile verification is successful
+2024-06-24 16:39:19,195 - INFO - User details found -->> {'mobile': 915421215452, 'name': 'Komal', 'company': 'APPLE'}
+2024-06-24 16:41:28,242 - DEBUG - GET METHOD entered with record {'mobile': 915421215452}
+2024-06-24 16:41:28,242 - INFO - Mobile verification is successful
+2024-06-24 16:41:28,243 - INFO - User details found -->> {'mobile': 915421215452, 'name': 'Komal', 'company': 'APPLE'}
+2024-06-24 16:42:42,607 - DEBUG - GET METHOD entered with record {'mobile': 915421215452}
+2024-06-24 16:42:42,607 - INFO - Mobile verification is successful
+2024-06-24 16:42:42,609 - INFO - User details found -->> {'mobile': 915421215452, 'name': 'Komal', 'company': 'APPLE'}
+2024-06-24 16:42:55,382 - DEBUG - GET METHOD entered with record {'mobile': 915421215452}
+2024-06-24 16:42:55,382 - INFO - Mobile verification is successful
+2024-06-24 16:42:55,382 - INFO - User details found -->> {'mobile': 915421215452, 'name': 'Komal', 'company': 'APPLE'}
+2024-06-24 16:43:06,901 - DEBUG - GET METHOD entered with record {'mobile': 915421215452}
+2024-06-24 16:43:06,901 - INFO - Mobile verification is successful
+2024-06-24 16:43:06,901 - INFO - User details found -->> {'mobile': 915421215452, 'name': 'Komal', 'company': 'APPLE'}
+2024-06-24 17:04:04,363 - DEBUG - GET METHOD entered with record {'mobile': 915421215459}
+2024-06-24 17:04:04,365 - INFO - Mobile verification is successful
+2024-06-24 17:04:04,365 - WARNING - No user details found for mobile number in GET METHOD 915421215459 so GET METHOD will return nothing.
+2024-06-24 17:04:12,646 - DEBUG - GET METHOD entered with record {'mobile': 915421215452}
+2024-06-24 17:04:12,646 - INFO - Mobile verification is successful
+2024-06-24 17:04:12,647 - INFO - User details found -->> {'mobile': 915421215452, 'name': 'Komal', 'company': 'APPLE'}
+2024-06-24 17:08:06,011 - DEBUG - GET METHOD entered with record {'mobile': 915421215452}
+2024-06-24 17:08:06,011 - INFO - Mobile verification is successful
+2024-06-24 17:08:06,012 - INFO - User details found -->> {'mobile': 915421215452, 'name': 'Komal', 'company': 'APPLE'}
+2024-06-24 17:08:06,012 - DEBUG - GET METHOD entered
+2024-06-24 17:08:06,012 - INFO - User details found -->> [{'mobile': 914234234245, 'name': 'Kumar Makala', 'company': 'KXN'}, {'mobile': 915421215452, 'name': 'Komal', 'company': 'APPLE'}, {'mobile': 913020022100, 'name': 'Mahesh', 'company': 'MICROSOFT'}, {'mobile': 910000000000, 'name': 'Rajesh', 'company': 'WIPRO'}, {'mobile': 914111111111, 'name': 'Suresh', 'company': 'MIND TREE'}]
+2024-06-24 17:08:29,060 - DEBUG - GET METHOD entered with record {'mobile': 915421215452}
+2024-06-24 17:08:29,060 - INFO - Mobile verification is successful
+2024-06-24 17:08:29,060 - INFO - User details found -->> {'mobile': 915421215452, 'name': 'Komal', 'company': 'APPLE'}
+2024-06-24 17:08:29,060 - DEBUG - GET METHOD entered
+2024-06-24 17:08:29,061 - INFO - User details found -->> [{'mobile': 914234234245, 'name': 'Kumar Makala', 'company': 'KXN'}, {'mobile': 915421215452, 'name': 'Komal', 'company': 'APPLE'}, {'mobile': 913020022100, 'name': 'Mahesh', 'company': 'MICROSOFT'}, {'mobile': 910000000000, 'name': 'Rajesh', 'company': 'WIPRO'}, {'mobile': 914111111111, 'name': 'Suresh', 'company': 'MIND TREE'}]
+2024-06-24 17:08:48,894 - DEBUG - GET METHOD entered with record {'mobile': 915421215452}
+2024-06-24 17:08:48,894 - INFO - Mobile verification is successful
+2024-06-24 17:08:48,894 - INFO - User details found -->> {'mobile': 915421215452, 'name': 'Komal', 'company': 'APPLE'}
+2024-06-24 17:08:48,894 - DEBUG - GET METHOD entered
+2024-06-24 17:08:48,894 - INFO - User details found -->> [{'mobile': 914234234245, 'name': 'Kumar Makala', 'company': 'KXN'}, {'mobile': 915421215452, 'name': 'Komal', 'company': 'APPLE'}, {'mobile': 913020022100, 'name': 'Mahesh', 'company': 'MICROSOFT'}, {'mobile': 910000000000, 'name': 'Rajesh', 'company': 'WIPRO'}, {'mobile': 914111111111, 'name': 'Suresh', 'company': 'MIND TREE'}]
+2024-06-24 17:10:13,610 - DEBUG - GET METHOD entered with record {'mobile': 915421215452}
+2024-06-24 17:10:13,610 - INFO - Mobile verification is successful
+2024-06-24 17:10:13,610 - INFO - User details found -->> {'mobile': 915421215452, 'name': 'Komal', 'company': 'APPLE'}
+2024-06-24 17:10:13,610 - DEBUG - GET METHOD entered
+2024-06-24 17:10:13,610 - INFO - User details found -->> [{'mobile': 914234234245, 'name': 'Kumar Makala', 'company': 'KXN'}, {'mobile': 915421215452, 'name': 'Komal', 'company': 'APPLE'}, {'mobile': 913020022100, 'name': 'Mahesh', 'company': 'MICROSOFT'}, {'mobile': 910000000000, 'name': 'Rajesh', 'company': 'WIPRO'}, {'mobile': 914111111111, 'name': 'Suresh', 'company': 'MIND TREE'}]
+2024-06-24 17:10:27,734 - DEBUG - GET METHOD entered with record {'mobile': 915421215452}
+2024-06-24 17:10:27,734 - INFO - Mobile verification is successful
+2024-06-24 17:10:27,734 - INFO - User details found -->> {'mobile': 915421215452, 'name': 'Komal', 'company': 'APPLE'}
+2024-06-24 17:10:27,735 - DEBUG - GET METHOD entered
+2024-06-24 17:10:27,735 - INFO - User details found -->> [{'mobile': 914234234245, 'name': 'Kumar Makala', 'company': 'KXN'}, {'mobile': 915421215452, 'name': 'Komal', 'company': 'APPLE'}, {'mobile': 913020022100, 'name': 'Mahesh', 'company': 'MICROSOFT'}, {'mobile': 910000000000, 'name': 'Rajesh', 'company': 'WIPRO'}, {'mobile': 914111111111, 'name': 'Suresh', 'company': 'MIND TREE'}]
+2024-06-24 17:10:56,056 - DEBUG - GET METHOD entered with record {'mobile': 915421215452}
+2024-06-24 17:10:56,056 - INFO - Mobile verification is successful
+2024-06-24 17:10:56,056 - INFO - User details found -->> {'mobile': 915421215452, 'name': 'Komal', 'company': 'APPLE'}
+2024-06-24 17:10:56,056 - DEBUG - GET METHOD entered
+2024-06-24 17:10:56,056 - INFO - User details found -->> [{'mobile': 914234234245, 'name': 'Kumar Makala', 'company': 'KXN'}, {'mobile': 915421215452, 'name': 'Komal', 'company': 'APPLE'}, {'mobile': 913020022100, 'name': 'Mahesh', 'company': 'MICROSOFT'}, {'mobile': 910000000000, 'name': 'Rajesh', 'company': 'WIPRO'}, {'mobile': 914111111111, 'name': 'Suresh', 'company': 'MIND TREE'}]
+2024-06-24 17:11:57,185 - DEBUG - GET METHOD entered with record {'mobile': 915421215452}
+2024-06-24 17:11:57,185 - INFO - Mobile verification is successful
+2024-06-24 17:11:57,185 - INFO - User details found -->> {'mobile': 915421215452, 'name': 'Komal', 'company': 'APPLE'}
+2024-06-24 17:11:57,185 - DEBUG - GET METHOD entered
+2024-06-24 17:11:57,185 - INFO - User details found -->> [{'mobile': 914234234245, 'name': 'Kumar Makala', 'company': 'KXN'}, {'mobile': 915421215452, 'name': 'Komal', 'company': 'APPLE'}, {'mobile': 913020022100, 'name': 'Mahesh', 'company': 'MICROSOFT'}, {'mobile': 910000000000, 'name': 'Rajesh', 'company': 'WIPRO'}, {'mobile': 914111111111, 'name': 'Suresh', 'company': 'MIND TREE'}]
+2024-06-24 17:15:54,586 - DEBUG - GET METHOD entered
+2024-06-24 17:15:54,586 - INFO - User details found -->> [{'mobile': 914234234245, 'name': 'Kumar Makala', 'company': 'KXN'}, {'mobile': 915421215452, 'name': 'Komal', 'company': 'APPLE'}, {'mobile': 913020022100, 'name': 'Mahesh', 'company': 'MICROSOFT'}, {'mobile': 910000000000, 'name': 'Rajesh', 'company': 'WIPRO'}, {'mobile': 914111111111, 'name': 'Suresh', 'company': 'MIND TREE'}]
+2024-06-24 17:16:52,846 - DEBUG - GET METHOD entered
+2024-06-24 17:16:52,846 - INFO - All User details are  -->> [{'mobile': 914234234245, 'name': 'Kumar Makala', 'company': 'KXN'}, {'mobile': 915421215452, 'name': 'Komal', 'company': 'APPLE'}, {'mobile': 913020022100, 'name': 'Mahesh', 'company': 'MICROSOFT'}, {'mobile': 910000000000, 'name': 'Rajesh', 'company': 'WIPRO'}, {'mobile': 914111111111, 'name': 'Suresh', 'company': 'MIND TREE'}]
+2024-06-24 17:20:24,636 - INFO - Mobile verification is successful
+2024-06-24 17:20:24,636 - WARNING - No user details found for mobile number 915421215451 so DELETION is not possible.
+2024-06-24 17:30:41,899 - DEBUG - PATCH METHOD entered with record {'mobile': '1234567890', 'name': 'Johnathan Doe'}
+2024-06-24 17:30:41,899 - ERROR - Error in PATCH METHOD: Invalid mobile number format
+2024-06-24 17:32:14,613 - DEBUG - PATCH METHOD entered with record {'mobile': '561234567890', 'name': 'Johnathan Doe'}
+2024-06-24 17:32:14,613 - ERROR - Error in PATCH METHOD: Invalid mobile number format
+2024-06-24 17:32:23,853 - DEBUG - PATCH METHOD entered with record {'mobile': 561234567890, 'name': 'Johnathan Doe'}
+2024-06-24 17:32:23,853 - INFO - Mobile verification is successful
+2024-06-24 17:32:23,854 - WARNING - No user details found for mobile number in PATCH METHOD 561234567890
+2024-06-24 17:33:06,621 - DEBUG - PATCH METHOD entered with record {'mobile': 914111111111, 'name': 'Johnathan Doe'}
+2024-06-24 17:33:06,621 - INFO - Mobile verification is successful
+2024-06-24 17:33:06,621 - INFO - User found for updating -->> {'mobile': 914111111111, 'name': 'Suresh', 'company': 'MIND TREE'}
+2024-06-24 17:33:06,621 - INFO - User details updated to -->> {'mobile': 914111111111, 'name': 'Johnathan Doe', 'company': 'MIND TREE'}
+2024-06-24 22:23:42,637 - DEBUG - PATCH METHOD entered with record {'mobile': 914111111111, 'name': 'Johnathan Doe'}
+2024-06-24 22:23:42,638 - INFO - Mobile verification is successful
+2024-06-24 22:23:42,638 - INFO - User found for updating -->> {'mobile': 914111111111, 'name': 'Suresh', 'company': 'MIND TREE'}
+2024-06-24 22:23:42,638 - INFO - User details updated to -->> {'mobile': 914111111111, 'name': 'Johnathan Doe', 'company': 'MIND TREE'}
+2024-06-24 22:24:02,555 - DEBUG - PATCH METHOD entered with record {'mobile': 914111111111, 'name': 'Johnathan Doe'}
+2024-06-24 22:24:02,556 - INFO - Mobile verification is successful
+2024-06-24 22:24:02,556 - INFO - User found for updating -->> {'mobile': 914111111111, 'name': 'Suresh', 'company': 'MIND TREE'}
+2024-06-24 22:24:02,556 - INFO - User details updated to -->> {'mobile': 914111111111, 'name': 'Johnathan Doe', 'company': 'MIND TREE'}
+2024-06-24 22:30:28,522 - DEBUG - POST METHOD entered with record {'mobile': 914111111111, 'name': 'Suresh', 'company': 'MIND TREE'}
+2024-06-24 22:30:28,522 - WARNING - {'mobile': 914111111111, 'name': 'Suresh', 'company': 'MIND TREE'} Record already exists, please enter new record details using POST METHOD
+2024-06-24 22:30:28,522 - DEBUG - GET METHOD entered with record {'mobile': 915421215452}
+2024-06-24 22:30:28,522 - INFO - User details found -->> {'mobile': 915421215452, 'name': 'Komal', 'company': 'APPLE'}
+2024-06-24 22:30:28,523 - DEBUG - GET METHOD entered
+2024-06-24 22:30:28,523 - INFO - All User details are  -->> [{'mobile': 914234234245, 'name': 'Kumar Makala', 'company': 'KXN'}, {'mobile': 915421215452, 'name': 'Komal', 'company': 'APPLE'}, {'mobile': 913020022100, 'name': 'Mahesh', 'company': 'MICROSOFT'}, {'mobile': 910000000000, 'name': 'Rajesh', 'company': 'WIPRO'}, {'mobile': 914111111111, 'name': 'Suresh', 'company': 'MIND TREE'}]
+2024-06-24 22:30:28,523 - WARNING - No user details found for mobile number 915421215451 so DELETION is not possible.
+2024-06-24 22:30:28,523 - DEBUG - PATCH METHOD entered with record {'mobile': 914111111111, 'name': 'Johnathan Doe'}
+2024-06-24 22:30:28,523 - INFO - User found for updating -->> {'mobile': 914111111111, 'name': 'Suresh', 'company': 'MIND TREE'}
+2024-06-24 22:30:28,523 - INFO - User details updated to -->> {'mobile': 914111111111, 'name': 'Johnathan Doe', 'company': 'MIND TREE'}
+2024-06-24 22:31:59,965 - DEBUG - POST METHOD entered with record {'mobile': 914111111111, 'name': 'Suresh', 'company': 'MIND TREE'}
+2024-06-24 22:31:59,965 - WARNING - {'mobile': 914111111111, 'name': 'Suresh', 'company': 'MIND TREE'} Record already exists, please enter new record details using POST METHOD
+2024-06-24 22:31:59,965 - DEBUG - GET METHOD entered with record {'mobile': 915421215452}
+2024-06-24 22:31:59,965 - INFO - User details found -->> {'mobile': 915421215452, 'name': 'Komal', 'company': 'APPLE'}
+2024-06-24 22:31:59,965 - DEBUG - GET METHOD entered
+2024-06-24 22:31:59,965 - INFO - All User details are  -->> [{'mobile': 914234234245, 'name': 'Kumar Makala', 'company': 'KXN'}, {'mobile': 915421215452, 'name': 'Komal', 'company': 'APPLE'}, {'mobile': 913020022100, 'name': 'Mahesh', 'company': 'MICROSOFT'}, {'mobile': 910000000000, 'name': 'Rajesh', 'company': 'WIPRO'}, {'mobile': 914111111111, 'name': 'Suresh', 'company': 'MIND TREE'}]
+2024-06-24 22:31:59,966 - WARNING - No user details found for mobile number 915421215451 so DELETION is not possible.
+2024-06-24 22:31:59,966 - DEBUG - PATCH METHOD entered with record {'mobile': 914111111111, 'name': 'Johnathan Doe'}
+2024-06-24 22:31:59,966 - INFO - User found for updating -->> {'mobile': 914111111111, 'name': 'Suresh', 'company': 'MIND TREE'}
+2024-06-24 22:31:59,966 - INFO - User details updated to -->> {'mobile': 914111111111, 'name': 'Johnathan Doe', 'company': 'MIND TREE'}
+2024-06-24 22:37:36,542 - DEBUG - POST METHOD entered with record {'mobile': 914111111111, 'name': 'Suresh', 'company': 'MIND TREE'}
+2024-06-24 22:37:36,542 - WARNING - {'mobile': 914111111111, 'name': 'Suresh', 'company': 'MIND TREE'} Record already exists, please enter new record details using POST METHOD
+2024-06-24 22:37:36,542 - DEBUG - GET METHOD entered with record {'mobile': 915421215452}
+2024-06-24 22:37:36,542 - INFO - Mobile verification is successful
+2024-06-24 22:37:36,542 - INFO - User details found -->> {'mobile': 915421215452, 'name': 'Komal', 'company': 'APPLE'}
+2024-06-24 22:37:36,542 - DEBUG - GET METHOD entered
+2024-06-24 22:37:36,542 - INFO - All User details are  -->> [{'mobile': 914234234245, 'name': 'Kumar Makala', 'company': 'KXN'}, {'mobile': 915421215452, 'name': 'Komal', 'company': 'APPLE'}, {'mobile': 913020022100, 'name': 'Mahesh', 'company': 'MICROSOFT'}, {'mobile': 910000000000, 'name': 'Rajesh', 'company': 'WIPRO'}, {'mobile': 914111111111, 'name': 'Suresh', 'company': 'MIND TREE'}]
+2024-06-24 22:37:36,542 - INFO - Mobile verification is successful
+2024-06-24 22:37:36,543 - WARNING - No user details found for mobile number 915421215451 so DELETION is not possible.
+2024-06-24 22:37:36,543 - DEBUG - PATCH METHOD entered with record {'mobile': 914111111111, 'name': 'Johnathan Doe'}
+2024-06-24 22:37:36,543 - INFO - Mobile verification is successful
+2024-06-24 22:37:36,543 - INFO - User found for updating -->> {'mobile': 914111111111, 'name': 'Suresh', 'company': 'MIND TREE'}
+2024-06-24 22:37:36,543 - INFO - User details updated to -->> {'mobile': 914111111111, 'name': 'Johnathan Doe', 'company': 'MIND TREE'}
+2024-06-24 22:38:43,226 - DEBUG - POST METHOD entered with record {'mobile': 914111111111, 'name': 'Suresh', 'company': 'MIND TREE'}
+2024-06-24 22:38:43,227 - WARNING - {'mobile': 914111111111, 'name': 'Suresh', 'company': 'MIND TREE'} Record already exists, please enter new record details using POST METHOD
+2024-06-24 22:38:43,227 - DEBUG - GET METHOD entered with record {'mobile': 915421215452}
+2024-06-24 22:38:43,227 - INFO - Mobile verification is successful
+2024-06-24 22:38:43,227 - INFO - User details found -->> {'mobile': 915421215452, 'name': 'Komal', 'company': 'APPLE'}
+2024-06-24 22:38:43,227 - DEBUG - GET METHOD entered
+2024-06-24 22:38:43,227 - INFO - All User details are  -->> [{'mobile': 914234234245, 'name': 'Kumar Makala', 'company': 'KXN'}, {'mobile': 915421215452, 'name': 'Komal', 'company': 'APPLE'}, {'mobile': 913020022100, 'name': 'Mahesh', 'company': 'MICROSOFT'}, {'mobile': 910000000000, 'name': 'Rajesh', 'company': 'WIPRO'}, {'mobile': 914111111111, 'name': 'Suresh', 'company': 'MIND TREE'}]
+2024-06-24 22:38:43,227 - INFO - Mobile verification is successful
+2024-06-24 22:38:43,227 - WARNING - No user details found for mobile number 915421215451 so DELETION is not possible.
+2024-06-24 22:38:43,227 - DEBUG - PATCH METHOD entered with record {'mobile': 914111111111, 'name': 'Johnathan Doe'}
+2024-06-24 22:38:43,227 - INFO - Mobile verification is successful
+2024-06-24 22:38:43,227 - INFO - User found for updating -->> {'mobile': 914111111111, 'name': 'Suresh', 'company': 'MIND TREE'}
+2024-06-24 22:38:43,227 - INFO - User details updated to -->> {'mobile': 914111111111, 'name': 'Johnathan Doe', 'company': 'MIND TREE'}
+2024-06-24 22:39:03,438 - DEBUG - POST METHOD entered with record {'mobile': 914111111111, 'name': 'Suresh', 'company': 'MIND TREE'}
+2024-06-24 22:39:03,439 - WARNING - {'mobile': 914111111111, 'name': 'Suresh', 'company': 'MIND TREE'} Record already exists, please enter new record details using POST METHOD
+2024-06-24 22:39:03,439 - DEBUG - GET METHOD entered with record {'mobile': 915421215452}
+2024-06-24 22:39:03,439 - INFO - Mobile verification is successful
+2024-06-24 22:39:03,439 - INFO - User details found -->> {'mobile': 915421215452, 'name': 'Komal', 'company': 'APPLE'}
+2024-06-24 22:39:03,439 - DEBUG - GET METHOD entered
+2024-06-24 22:39:03,439 - INFO - All User details are  -->> [{'mobile': 914234234245, 'name': 'Kumar Makala', 'company': 'KXN'}, {'mobile': 915421215452, 'name': 'Komal', 'company': 'APPLE'}, {'mobile': 913020022100, 'name': 'Mahesh', 'company': 'MICROSOFT'}, {'mobile': 910000000000, 'name': 'Rajesh', 'company': 'WIPRO'}, {'mobile': 914111111111, 'name': 'Suresh', 'company': 'MIND TREE'}]
+2024-06-24 22:39:03,439 - INFO - Mobile verification is successful
+2024-06-24 22:39:03,439 - WARNING - No user details found for mobile number 915421215451 so DELETION is not possible.
+2024-06-24 22:39:03,440 - DEBUG - PATCH METHOD entered with record {'mobile': 914111111111, 'name': 'Johnathan Doe'}
+2024-06-24 22:39:03,440 - INFO - Mobile verification is successful
+2024-06-24 22:39:03,440 - INFO - User found for updating -->> {'mobile': 914111111111, 'name': 'Suresh', 'company': 'MIND TREE'}
+2024-06-24 22:39:03,440 - INFO - User details updated to -->> {'mobile': 914111111111, 'name': 'Johnathan Doe', 'company': 'MIND TREE'}
+2024-06-24 22:39:32,203 - DEBUG - POST METHOD entered with record {'mobile': 914111111111, 'name': 'Suresh', 'company': 'MIND TREE'}
+2024-06-24 22:39:32,204 - WARNING - {'mobile': 914111111111, 'name': 'Suresh', 'company': 'MIND TREE'} Record already exists, please enter new record details using POST METHOD
+2024-06-24 22:39:32,204 - DEBUG - GET METHOD entered with record {'mobile': 915421215452}
+2024-06-24 22:39:32,204 - INFO - Mobile verification is successful
+2024-06-24 22:39:32,204 - INFO - User details found -->> {'mobile': 915421215452, 'name': 'Komal', 'company': 'APPLE'}
+2024-06-24 22:39:32,204 - DEBUG - GET METHOD entered
+2024-06-24 22:39:32,204 - INFO - All User details are  -->> [{'mobile': 914234234245, 'name': 'Kumar Makala', 'company': 'KXN'}, {'mobile': 915421215452, 'name': 'Komal', 'company': 'APPLE'}, {'mobile': 913020022100, 'name': 'Mahesh', 'company': 'MICROSOFT'}, {'mobile': 910000000000, 'name': 'Rajesh', 'company': 'WIPRO'}, {'mobile': 914111111111, 'name': 'Suresh', 'company': 'MIND TREE'}]
+2024-06-24 22:39:32,204 - INFO - Mobile verification is successful
+2024-06-24 22:39:32,204 - WARNING - No user details found for mobile number 915421215451 so DELETION is not possible.
+2024-06-24 22:39:32,205 - DEBUG - PATCH METHOD entered with record {'mobile': 914111111111, 'name': 'Johnathan Doe'}
+2024-06-24 22:39:32,205 - INFO - Mobile verification is successful
+2024-06-24 22:39:32,205 - INFO - User found for updating -->> {'mobile': 914111111111, 'name': 'Suresh', 'company': 'MIND TREE'}
+2024-06-24 22:39:32,205 - INFO - User details updated to -->> {'mobile': 914111111111, 'name': 'Johnathan Doe', 'company': 'MIND TREE'}
+2024-06-24 22:39:42,677 - DEBUG - POST METHOD entered with record {'mobile': 914111111111, 'name': 'Suresh', 'company': 'MIND TREE'}
+2024-06-24 22:39:42,677 - WARNING - {'mobile': 914111111111, 'name': 'Suresh', 'company': 'MIND TREE'} Record already exists, please enter new record details using POST METHOD
+2024-06-24 22:39:42,678 - DEBUG - GET METHOD entered with record {'mobile': 915421215452}
+2024-06-24 22:39:42,678 - INFO - Mobile verification is successful
+2024-06-24 22:39:42,678 - INFO - User details found -->> {'mobile': 915421215452, 'name': 'Komal', 'company': 'APPLE'}
+2024-06-24 22:39:42,678 - DEBUG - GET METHOD entered
+2024-06-24 22:39:42,678 - INFO - All User details are  -->> [{'mobile': 914234234245, 'name': 'Kumar Makala', 'company': 'KXN'}, {'mobile': 915421215452, 'name': 'Komal', 'company': 'APPLE'}, {'mobile': 913020022100, 'name': 'Mahesh', 'company': 'MICROSOFT'}, {'mobile': 910000000000, 'name': 'Rajesh', 'company': 'WIPRO'}, {'mobile': 914111111111, 'name': 'Suresh', 'company': 'MIND TREE'}]
+2024-06-24 22:39:42,678 - INFO - Mobile verification is successful
+2024-06-24 22:39:42,678 - WARNING - No user details found for mobile number 915421215451 so DELETION is not possible.
+2024-06-24 22:39:42,678 - DEBUG - PATCH METHOD entered with record {'mobile': 914111111111, 'name': 'Johnathan Doe'}
+2024-06-24 22:39:42,678 - INFO - Mobile verification is successful
+2024-06-24 22:39:42,678 - INFO - User found for updating -->> {'mobile': 914111111111, 'name': 'Suresh', 'company': 'MIND TREE'}
+2024-06-24 22:39:42,678 - INFO - User details updated to -->> {'mobile': 914111111111, 'name': 'Johnathan Doe', 'company': 'MIND TREE'}
+2024-06-24 22:45:50,730 - DEBUG - POST METHOD entered with record {'mobile': 914111111111, 'name': 'Suresh', 'company': 'MIND TREE'}
+2024-06-24 22:45:50,730 - WARNING - {'mobile': 914111111111, 'name': 'Suresh', 'company': 'MIND TREE'} Record already exists, please enter new record details using POST METHOD
+2024-06-24 22:45:50,730 - DEBUG - GET METHOD entered with record {'mobile': 915421215452}
+2024-06-24 22:45:50,730 - INFO - Mobile verification is successful
+2024-06-24 22:45:50,730 - INFO - User details found -->> {'mobile': 915421215452, 'name': 'Komal', 'company': 'APPLE'}
+2024-06-24 22:45:50,730 - DEBUG - GET METHOD entered
+2024-06-24 22:45:50,730 - INFO - All User details are  -->> [{'mobile': 914234234245, 'name': 'Kumar Makala', 'company': 'KXN'}, {'mobile': 915421215452, 'name': 'Komal', 'company': 'APPLE'}, {'mobile': 913020022100, 'name': 'Mahesh', 'company': 'MICROSOFT'}, {'mobile': 910000000000, 'name': 'Rajesh', 'company': 'WIPRO'}, {'mobile': 914111111111, 'name': 'Suresh', 'company': 'MIND TREE'}]
+2024-06-24 22:45:50,730 - INFO - Mobile verification is successful
+2024-06-24 22:45:50,730 - WARNING - No user details found for mobile number 915421215451 so DELETION is not possible.
+2024-06-24 22:45:50,732 - DEBUG - PATCH METHOD entered with record {'mobile': 914111111111, 'name': 'Johnathan Doe'}
+2024-06-24 22:45:50,732 - INFO - Mobile verification is successful
+2024-06-24 22:45:50,732 - INFO - User found for updating -->> {'mobile': 914111111111, 'name': 'Suresh', 'company': 'MIND TREE'}
+2024-06-24 22:45:50,732 - INFO - User details updated to -->> {'mobile': 914111111111, 'name': 'Johnathan Doe', 'company': 'MIND TREE'}
