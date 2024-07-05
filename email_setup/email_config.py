@@ -26,5 +26,9 @@ Some one is checking single user information from the table
 GET_USER_RANGE = """
 Some one is checking User Range information from the table
 """
+
+PASSWORD_RESET_MESSAGE = """
+Admin is resetting User Password from the table
+"""
 #print("This is smtp_port---", SMTP_PORT)
 #print("This is email_password", PASSWORD)

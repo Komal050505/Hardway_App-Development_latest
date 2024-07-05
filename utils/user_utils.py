@@ -1,5 +1,6 @@
 from app_development.app.constants import *
 from app_development.logging_activity.logging_utils import *
+import re
 
 """
 This module contains utilities which are repeated in the actual program. Programmers can use these in their code.
@@ -31,8 +32,8 @@ def is_valid_mobile(mobile):
         else:
             log_error(f"Invalid mobile type - {mobile}, should be an integer")
             raise ValueError(f"Invalid mobile number type - {type(mobile)}")
-    except Exception as err:
-        log_error(f"Error in is_valid_mobile function: {e}")
+    except Exception as error:
+        log_error(f"Error in is_valid_mobile function: {error}")
         return err
 
 
@@ -180,13 +181,13 @@ def is_valid_employee_id(employee_id):
     log_info(f" ------is valid employee ID function entered------\n")
     if isinstance(employee_id, str) and employee_id.startswith("EMP") and len(employee_id) == 6:
         log_debug(f"Employee ID {employee_id} is valid.")
-        if employee_id not in VALID_EMPLOYEE_IDS:
-            log_warning(f"{employee_id} is not in {VALID_EMPLOYEE_IDS}")
-            return False
-        else:
-            log_info(f"{employee_id} is in {VALID_EMPLOYEE_IDS}")
-            return True
-
+        # if employee_id not in VALID_EMPLOYEE_IDS:
+        #     log_warning(f"{employee_id} is not in {VALID_EMPLOYEE_IDS}")
+        #     return False
+        # else:
+        #     log_info(f"{employee_id} is in {VALID_EMPLOYEE_IDS}")
+        #     return True
+        return True
     else:
         log_warning(f"Invalid employee ID format: {employee_id}")
         return False
@@ -202,3 +203,9 @@ def send_email(recipients, message):
     log_info(f"Sending email to {recipients} with message: {message}")
 
     log_debug("Email sent successfully.")
+
+
+def is_valid_email(email):
+    # Define the regex pattern for a valid email
+    pattern = r'^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$'
+    return re.match(pattern, email) is not None
