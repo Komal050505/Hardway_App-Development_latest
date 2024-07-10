@@ -1,5 +1,5 @@
-from app_development.logging_activity.logging_module import logging
-from app_development.app.constants import LOG_SWITCH
+from profile_management.logging_activity.logging_module import logging
+from profile_management.apps.constants import LOG_SWITCH
 
 
 def log_info(message):

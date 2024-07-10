@@ -1,5 +1,5 @@
-from app_development.app.constants import *
-from app_development.logging_activity.logging_utils import *
+from profile_management.apps.constants import *
+from profile_management.logging_activity.logging_utils import *
 import re
 
 """
@@ -7,42 +7,61 @@ This module contains utilities which are repeated in the actual program. Program
 """
 
 
+def is_valid_name(name):
+    """
+        This function checks whether the name is valid or not.
+        :param name: str
+        :return: bool
+        """
+    log_info(f"is valid name function entered")
+    try:
+        if not name:
+            log_debug(f"Name {name} or not")
+            return False
+        if not name.isalpha():
+            log_debug(f"Name {name} has alphabets or not")
+            return False
+        log_info(f"Valid name {name} So True")
+        return True
+    except Exception as error:
+        return error
+
+
 # MOBILE VALIDATION
+
 def is_valid_mobile(mobile):
     """
     This function checks whether the mobile number is valid or not.
-    :param mobile: int
+    :param mobile: str or int
     :return: bool
     """
-    log_info(f" ------is valid mobile function entered------\n")
+    log_info("------is valid mobile function entered------")
     try:
+        # Convert integer to string if necessary
         if isinstance(mobile, int):
-            converted_str = str(mobile)
-            if len(converted_str) == 12:
-                if converted_str[:2] in VALID_COUNTRY_LIST:
-                    log_debug(f"converted str {converted_str[:2]} is in {VALID_COUNTRY_LIST}")
-                    log_info("------is valid mobile function ended------")
-                    return True
-                else:
-                    log_error(f"Invalid country code - {converted_str[:2]} which is not in {VALID_COUNTRY_LIST}")
-                    raise ValueError(f"Invalid country code - {converted_str[:2]} which is not in {VALID_COUNTRY_LIST}")
-            else:
-                log_error(f"Invalid length of mobile - {converted_str}, should be length of 12")
-                raise ValueError(f"Invalid mobile number length - {mobile}")
-        else:
-            log_error(f"Invalid mobile type - {mobile}, should be an integer")
-            raise ValueError(f"Invalid mobile number type - {type(mobile)}")
-    except Exception as error:
-        log_error(f"Error in is_valid_mobile function: {error}")
-        return err
+            mobile = str(mobile)  # Convert integer to string
 
+        log_debug(f"Validating mobile number: {mobile}")
 
-try:
-    mobiles = 912459878954
-    is_valid_mobile(mobiles)
-    log_info(f"Result: {mobiles}")
-except ValueError as e:
-    log_error(e)
+        # Ensure mobile number is a string
+        if not isinstance(mobile, str):
+            raise ValueError(f"Invalid mobile number type - {type(mobile)}. Expected a string.")
+
+        # Check if mobile number contains only digits
+        if not mobile.isdigit():
+            raise ValueError("Mobile number should contain digits only.")
+
+        # Check if mobile number length is between 10 and 12 digits
+        if len(mobile) < 10 or len(mobile) > 12:
+            raise ValueError("Mobile number must be between 10 and 12 digits.")
+
+        log_debug(f"Mobile number {mobile} is valid")
+        return True
+    except ValueError as e:
+        log_error(f"Error in is_valid_mobile function: {e}")
+        return False
+    finally:
+        log_info("------is valid mobile function ended------")
 
 
 def is_excluded(mobile_num):
@@ -64,14 +83,6 @@ def is_excluded(mobile_num):
     return False
 
 
-try:
-    mobile_nums = 912459878954
-    is_excluded(mobile_nums)
-    log_info(f"Result: {mobile_nums}")
-except ValueError as e:
-    log_error(e)
-
-
 def is_valid_country(converted_str):
     """
     This function checks whether the mobile number matches the given country code or not.
@@ -85,14 +96,6 @@ def is_valid_country(converted_str):
     else:
         log_error(f"Invalid country code - {converted_str[:2]} which is not in {VALID_COUNTRY_LIST}")
         raise ValueError(f"Invalid country code - {converted_str[:2]}. Valid country codes are {VALID_COUNTRY_LIST}")
-
-
-try:
-    converted_strs = "561245625142"
-    is_valid_country(converted_strs)
-    log_info(f"Result: {converted_strs}")
-except ValueError as e:
-    log_error(e)
 
 
 def is_mobile_length_valid(converted_str):
@@ -111,33 +114,39 @@ def is_mobile_length_valid(converted_str):
         raise ValueError(f"Invalid mobile number length {len(converted_str)}. Valid length is {converted_str}")
 
 
-try:
-    converted_strs = is_mobile_length_valid("564215210212")
-    log_info(f"Result: {converted_strs}")
-except ValueError as e:
-    log_error(e)
-
-
 def is_valid_type(mobile):
     """
-    This function checks whether the type of the mobile number is valid or not.
-    :param mobile: int
+    This function checks whether the type and format of the mobile number are valid.
+    :param mobile: str or int
     :return: bool
     """
-    log_info(f" ------is  valid type function entered------\n")
-    if isinstance(mobile, int):
-        log_debug(f" {mobile} is of valid type -- {isinstance(mobile, int)}")
+    log_info("------is valid type function entered------")
+    try:
+        # Convert integer to string if necessary
+        if isinstance(mobile, int):
+            mobile = str(mobile)  # Convert integer to string
+
+        log_debug(f"Validating mobile number: {mobile}")
+
+        # Ensure mobile number is a string
+        if not isinstance(mobile, str):
+            raise ValueError(f"Invalid mobile number type - {type(mobile)}. Expected a string.")
+
+        # Check if mobile number contains only digits
+        if not mobile.isdigit():
+            raise ValueError("Mobile number should contain digits only.")
+
+        # Check if mobile number length is between 10 and 12 digits
+        if len(mobile) < 10 or len(mobile) > 12:
+            raise ValueError("Mobile number must be between 10 and 12 digits.")
+
+        log_debug(f"Mobile number {mobile} is valid")
         return True
-    else:
-        log_error(f"Invalid mobile type - {mobile}, should be an integer")
-        raise ValueError(f"Invalid mobile number type - {type(mobile)}")
-
-
-try:
-    mobiles = is_valid_type(561245789654)
-    log_info(f"Result: {mobiles}")
-except ValueError as e:
-    log_error(e)
+    except ValueError as e:
+        log_error(f"Error in is_valid_type function: {e}")
+        return False
+    finally:
+        log_info("------is valid type function ended------")
 
 
 def is_valid_record(RAW_DATA, record):
@@ -165,13 +174,6 @@ def is_valid_record(RAW_DATA, record):
     return True
 
 
-try:
-    valid_record = is_valid_record(DATA, {"mobile": 9898989898, "name": "Suresh", "company": "MIND TREE"})
-    log_info(f"Result: {valid_record}")
-except ValueError as err:
-    log_error(err)
-
-
 def is_valid_employee_id(employee_id):
     """
     This function checks whether the employee ID is valid or not.
@@ -181,12 +183,6 @@ def is_valid_employee_id(employee_id):
     log_info(f" ------is valid employee ID function entered------\n")
     if isinstance(employee_id, str) and employee_id.startswith("EMP") and len(employee_id) == 6:
         log_debug(f"Employee ID {employee_id} is valid.")
-        # if employee_id not in VALID_EMPLOYEE_IDS:
-        #     log_warning(f"{employee_id} is not in {VALID_EMPLOYEE_IDS}")
-        #     return False
-        # else:
-        #     log_info(f"{employee_id} is in {VALID_EMPLOYEE_IDS}")
-        #     return True
         return True
     else:
         log_warning(f"Invalid employee ID format: {employee_id}")

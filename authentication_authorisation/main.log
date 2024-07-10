@@ -2,3 +2,165 @@
 
 2024-06-29 01:30:16,761 - INFO - Decorator Function Ended successfully 
 
+2024-07-07 23:46:50,468 - INFO -  ------is valid mobile function entered------
+
+2024-07-07 23:46:50,469 - DEBUG - converted str 91 is in ['91', '45', '67', '56']
+2024-07-07 23:46:50,469 - INFO - ------is valid mobile function ended------
+2024-07-07 23:46:50,469 - INFO - Result: 912459878954
+2024-07-07 23:46:50,469 - INFO -  ------is excluded function entered------
+
+2024-07-07 23:46:50,469 - WARNING - mobile_num 912459878954 is not in [9898989898, 9999999999, 8888888888].
+2024-07-07 23:46:50,469 - INFO - Result: 912459878954
+2024-07-07 23:46:50,469 - INFO -  ------is valid country function entered------
+
+2024-07-07 23:46:50,470 - DEBUG - converted_str 561245625142 is in VALID_COUNTRY_LIST ['91', '45', '67', '56']
+2024-07-07 23:46:50,470 - INFO - Result: 561245625142
+2024-07-07 23:46:50,470 - INFO -  ------is mobile length valid function entered------
+
+2024-07-07 23:46:50,470 - DEBUG - converted_str 564215210212 is of valid length (12 digits)
+2024-07-07 23:46:50,470 - INFO - ------is mobile length valid function ended------
+2024-07-07 23:46:50,470 - INFO - Result: True
+2024-07-07 23:46:50,470 - INFO -  ------is  valid type function entered------
+
+2024-07-07 23:46:50,470 - DEBUG -  561245789654 is of valid type -- True
+2024-07-07 23:46:50,470 - INFO - Result: True
+2024-07-07 23:46:50,470 - INFO -  ------is  valid record function entered------
+
+2024-07-07 23:46:50,470 - DEBUG - Record {'mobile': 9898989898, 'name': 'Suresh', 'company': 'MIND TREE'} is valid
+2024-07-07 23:46:50,470 - INFO - Result: True
+2024-07-08 15:28:58,993 - INFO -  ------is valid mobile function entered------
+
+2024-07-08 15:28:58,993 - DEBUG - converted str 91 is in ['91', '45', '67', '56']
+2024-07-08 15:28:58,993 - INFO - ------is valid mobile function ended------
+2024-07-08 15:28:58,993 - INFO - Result: 912459878954
+2024-07-08 15:28:58,993 - INFO -  ------is excluded function entered------
+
+2024-07-08 15:28:58,994 - WARNING - mobile_num 912459878954 is not in [9898989898, 9999999999, 8888888888].
+2024-07-08 15:28:58,994 - INFO - Result: 912459878954
+2024-07-08 15:28:58,994 - INFO -  ------is valid country function entered------
+
+2024-07-08 15:28:58,994 - DEBUG - converted_str 561245625142 is in VALID_COUNTRY_LIST ['91', '45', '67', '56']
+2024-07-08 15:28:58,994 - INFO - Result: 561245625142
+2024-07-08 15:28:58,994 - INFO -  ------is mobile length valid function entered------
+
+2024-07-08 15:28:58,994 - DEBUG - converted_str 564215210212 is of valid length (12 digits)
+2024-07-08 15:28:58,994 - INFO - ------is mobile length valid function ended------
+2024-07-08 15:28:58,994 - INFO - Result: True
+2024-07-08 15:28:58,994 - INFO -  ------is  valid type function entered------
+
+2024-07-08 15:28:58,994 - DEBUG -  561245789654 is of valid type -- True
+2024-07-08 15:28:58,994 - INFO - Result: True
+2024-07-08 15:28:58,994 - INFO -  ------is  valid record function entered------
+
+2024-07-08 15:28:58,994 - DEBUG - Record {'mobile': 9898989898, 'name': 'Suresh', 'company': 'MIND TREE'} is valid
+2024-07-08 15:28:58,994 - INFO - Result: True
+2024-07-08 15:33:44,514 - INFO -  ------is valid mobile function entered------
+
+2024-07-08 15:33:44,514 - DEBUG - converted str 91 is in ['91', '45', '67', '56']
+2024-07-08 15:33:44,514 - INFO - ------is valid mobile function ended------
+2024-07-08 15:33:44,514 - INFO - Result: 912459878954
+2024-07-08 15:33:44,514 - INFO -  ------is excluded function entered------
+
+2024-07-08 15:33:44,515 - WARNING - mobile_num 912459878954 is not in [9898989898, 9999999999, 8888888888].
+2024-07-08 15:33:44,515 - INFO - Result: 912459878954
+2024-07-08 15:33:44,515 - INFO -  ------is valid country function entered------
+
+2024-07-08 15:33:44,515 - DEBUG - converted_str 561245625142 is in VALID_COUNTRY_LIST ['91', '45', '67', '56']
+2024-07-08 15:33:44,515 - INFO - Result: 561245625142
+2024-07-08 15:33:44,515 - INFO -  ------is mobile length valid function entered------
+
+2024-07-08 15:33:44,515 - DEBUG - converted_str 564215210212 is of valid length (12 digits)
+2024-07-08 15:33:44,515 - INFO - ------is mobile length valid function ended------
+2024-07-08 15:33:44,515 - INFO - Result: True
+2024-07-08 15:33:44,515 - INFO -  ------is  valid type function entered------
+
+2024-07-08 15:33:44,515 - DEBUG -  561245789654 is of valid type -- True
+2024-07-08 15:33:44,515 - INFO - Result: True
+2024-07-08 15:33:44,515 - INFO -  ------is  valid record function entered------
+
+2024-07-08 15:33:44,515 - DEBUG - Record {'mobile': 9898989898, 'name': 'Suresh', 'company': 'MIND TREE'} is valid
+2024-07-08 15:33:44,515 - INFO - Result: True
+2024-07-08 15:44:23,012 - INFO -  ------is valid mobile function entered------
+
+2024-07-08 15:44:23,012 - DEBUG - converted str 91 is in ['91', '45', '67', '56']
+2024-07-08 15:44:23,012 - INFO - ------is valid mobile function ended------
+2024-07-08 15:44:23,012 - INFO - Result: 912459878954
+2024-07-08 15:44:23,012 - INFO -  ------is excluded function entered------
+
+2024-07-08 15:44:23,012 - WARNING - mobile_num 912459878954 is not in [9898989898, 9999999999, 8888888888].
+2024-07-08 15:44:23,012 - INFO - Result: 912459878954
+2024-07-08 15:44:23,012 - INFO -  ------is valid country function entered------
+
+2024-07-08 15:44:23,012 - DEBUG - converted_str 561245625142 is in VALID_COUNTRY_LIST ['91', '45', '67', '56']
+2024-07-08 15:44:23,012 - INFO - Result: 561245625142
+2024-07-08 15:44:23,012 - INFO -  ------is mobile length valid function entered------
+
+2024-07-08 15:44:23,012 - DEBUG - converted_str 564215210212 is of valid length (12 digits)
+2024-07-08 15:44:23,012 - INFO - ------is mobile length valid function ended------
+2024-07-08 15:44:23,014 - INFO - Result: True
+2024-07-08 15:44:23,014 - INFO -  ------is  valid type function entered------
+
+2024-07-08 15:44:23,014 - DEBUG -  561245789654 is of valid type -- True
+2024-07-08 15:44:23,014 - INFO - Result: True
+2024-07-08 15:44:23,014 - INFO -  ------is  valid record function entered------
+
+2024-07-08 15:44:23,014 - DEBUG - Record {'mobile': 9898989898, 'name': 'Suresh', 'company': 'MIND TREE'} is valid
+2024-07-08 15:44:23,014 - INFO - Result: True
+2024-07-08 15:50:29,919 - INFO -  ------is valid mobile function entered------
+
+2024-07-08 15:50:29,919 - DEBUG - converted str 91 is in ['91', '45', '67', '56']
+2024-07-08 15:50:29,919 - INFO - ------is valid mobile function ended------
+2024-07-08 15:50:29,919 - INFO - Result: 912459878954
+2024-07-08 15:50:29,919 - INFO -  ------is excluded function entered------
+
+2024-07-08 15:50:29,919 - WARNING - mobile_num 912459878954 is not in [9898989898, 9999999999, 8888888888].
+2024-07-08 15:50:29,919 - INFO - Result: 912459878954
+2024-07-08 15:50:29,919 - INFO -  ------is valid country function entered------
+
+2024-07-08 15:50:29,919 - DEBUG - converted_str 561245625142 is in VALID_COUNTRY_LIST ['91', '45', '67', '56']
+2024-07-08 15:50:29,919 - INFO - Result: 561245625142
+2024-07-08 15:50:29,919 - INFO -  ------is mobile length valid function entered------
+
+2024-07-08 15:50:29,919 - DEBUG - converted_str 564215210212 is of valid length (12 digits)
+2024-07-08 15:50:29,919 - INFO - ------is mobile length valid function ended------
+2024-07-08 15:50:29,919 - INFO - Result: True
+2024-07-08 15:50:29,919 - INFO -  ------is  valid type function entered------
+
+2024-07-08 15:50:29,919 - DEBUG -  561245789654 is of valid type -- True
+2024-07-08 15:50:29,919 - INFO - Result: True
+2024-07-08 15:50:29,919 - INFO -  ------is  valid record function entered------
+
+2024-07-08 15:50:29,919 - DEBUG - Record {'mobile': 9898989898, 'name': 'Suresh', 'company': 'MIND TREE'} is valid
+2024-07-08 15:50:29,919 - INFO - Result: True
+2024-07-09 21:50:46,569 - INFO -  ------is valid mobile function entered------
+
+2024-07-09 21:50:46,570 - INFO - ------is valid mobile function ended------
+2024-07-09 21:50:46,570 - INFO - Result: 912459878954
+2024-07-09 21:50:46,570 - INFO -  ------is excluded function entered------
+
+2024-07-09 21:50:46,570 - WARNING - mobile_num 912459878954 is not in [9898989898, 9999999999, 8888888888].
+2024-07-09 21:50:46,570 - INFO - Result: 912459878954
+2024-07-09 21:50:46,570 - INFO -  ------is valid country function entered------
+
+2024-07-09 21:50:46,570 - DEBUG - converted_str 561245625142 is in VALID_COUNTRY_LIST ['91', '45', '67', '56']
+2024-07-09 21:50:46,570 - INFO - Result: 561245625142
+2024-07-09 21:50:46,570 - INFO -  ------is mobile length valid function entered------
+
+2024-07-09 21:50:46,570 - DEBUG - converted_str 564215210212 is of valid length (12 digits)
+2024-07-09 21:50:46,570 - INFO - ------is mobile length valid function ended------
+2024-07-09 21:50:46,570 - INFO - Result: True
+2024-07-09 21:50:46,570 - INFO -  ------is  valid type function entered------
+
+2024-07-09 21:50:46,570 - ERROR - Error in is_valid_type function: Invalid mobile number type - <class 'int'>. Expected a string.
+2024-07-09 21:50:46,570 - INFO - ------is valid type function ended------
+2024-07-09 21:50:46,571 - INFO - Result: False
+2024-07-09 21:50:46,571 - INFO -  ------is  valid record function entered------
+
+2024-07-09 21:50:46,571 - DEBUG - Record {'mobile': 9898989898, 'name': 'Suresh', 'company': 'MIND TREE'} is valid
+2024-07-09 21:50:46,571 - INFO - Result: True
+2024-07-09 21:50:46,571 - INFO -  ------is valid mobile function entered------
+
+2024-07-09 21:50:46,571 - INFO - ------is valid mobile function ended------
+2024-07-10 14:42:11,444 - INFO -  ------is valid mobile function entered------
+
+2024-07-10 14:42:11,449 - INFO - ------is valid mobile function ended------
