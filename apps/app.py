@@ -3,7 +3,7 @@ from profile_management.apps.constants import *
 from profile_management.email_setup.email_operations import send_email, new_record_email_content
 from profile_management.authentication_authorisation.aunthentic_authorised import *
 from profile_management.logging_activity.logging_utils import log_info, log_warning, log_error, log_debug
-
+from flask import jsonify
 """
 This module contains the main code to be executed 
 """
@@ -27,7 +27,8 @@ def new_record(admin_name, record):
             email_body = f"External user '{admin_name}' attempted attempted to Insert New Users {record} Record ."
             send_email(["komalsaikiran05@gmail.com"], email_subject, email_body)
             log_debug(f"Email sent for external user '{admin_name}' attempt")
-            return {"error": f"External user '{admin_name}' is not authorized to Insert New Users {record} Record"}
+            return jsonify({"error": f"External user '{admin_name}' "
+                                     f"is not authorized to Insert New Users {record} Record"}), 403
         # validates admin_operations(name) function (authentic_authorised.py)
         if admin_operations(admin_name):
 
@@ -71,20 +72,20 @@ def new_record(admin_name, record):
             log_debug(f"Record inserted successfully. New record added to AVAILABLE_RECORDS: {AVAILABLE_RECORDS}")
 
             log_info(f"Record successfully inserted using POST METHOD: {record}")
-            return {"message": "Successfully inserted into the record", "record": record}
+            return jsonify({"message": "Successfully inserted into the record", "record": record}), 200
         else:
             log_error(f"Unauthorized access: {admin_name} does not have permission to create new records.")
             email_subject = f"Unauthorized Access Attempt by '{admin_name}'"
             email_body = f"User '{admin_name}' attempted to add a new record but lacks the necessary permissions."
             send_email(["komalsaikiran05@gmail.com"], email_subject, email_body)
-            return {"error": "No user details found"}
+            return jsonify({"error": "No user details found"}), 403
     except KeyError as error:
         error_message = f"KeyError: {error}. Please check the structure of the record."
         log_error(error_message)
         email_subject = f"Error Inserting Record by '{admin_name}'"
         email_body = f"KeyError occurred while '{admin_name}' was inserting a record: {error_message}"
         send_email(["komalsaikiran05@gmail.com"], email_subject, email_body)
-        return {"message": error_message, "status": "Failed"}
+        return jsonify({"message": error_message, "status": "Failed"}), 400
 
     except ValueError as error:
         error_message = str(error)
@@ -92,14 +93,14 @@ def new_record(admin_name, record):
         email_subject = f"Error Inserting Record by '{admin_name}'"
         email_body = f"ValueError occurred while '{admin_name}' was inserting a record: {error_message}"
         send_email(["komalsaikiran05@gmail.com"], email_subject, email_body)
-        return {"message": error_message, "status": "Failed"}
+        return jsonify({"message": error_message, "status": "Failed"}), 400
     except Exception as error:
         error_message = f"Unexpected error: {str(error)}"
         log_error(f"Error inserting record: {error_message} using POST METHOD")
         email_subject = f"Unexpected Error Inserting Record by '{admin_name}'"
         email_body = f"An unexpected error occurred while '{admin_name}' was inserting a record: {error_message}"
         send_email(["komalsaikiran05@gmail.com"], email_subject, email_body)
-        return {"message": error_message, "status": "Failed"}
+        return jsonify({"message": error_message, "status": "Failed"}), 500
 
 
 log_info(f"----------------------New Record function Ended---------------------------\n")
@@ -118,7 +119,7 @@ def get_single_user_details(username, record):
             email_body = f"Red Alert: External User '{username}' Attempted to Access single User info"
             send_email(["komalsaikiran05@gmail.com"], email_subject, email_body)
             log_debug(f"Email sent for external user '{username}' attempt")
-            return {"error": f"User '{username}' is not authorized to access these details"}
+            return jsonify({"error": f"User '{username}' is not authorized to access these details"}), 403
 
         if "mobile" not in record or "employee_id" not in record or "name" not in record:
             log_warning(f'Missing "mobile", "employee_id", or "name" keys in record')
@@ -126,7 +127,7 @@ def get_single_user_details(username, record):
             email_body = f"User '{username}' attempted to access details with missing keys in record."
             send_email(["komalsaikiran05@gmail.com"], email_subject, email_body)
             log_debug(f"Email sent for missing keys in record by '{username}'")
-            return {"error": "Missing 'mobile', 'employee_id', or 'name' keys in record"}
+            return jsonify({"error": "Missing 'mobile', 'employee_id', or 'name' keys in record"}), 403
 
         name = record["name"].lower()
         mobile = str(record["mobile"])  # Ensure mobile number is converted to string
@@ -142,7 +143,7 @@ def get_single_user_details(username, record):
             email_body = f"User '{username}' attempted to access details with invalid mobile number or employee ID."
             send_email(["komalsaikiran05@gmail.com"], email_subject, email_body)
             log_debug(f"Email sent for invalid credentials by '{username}'")
-            return {"error": "Invalid mobile number or employee ID"}
+            return jsonify({"error": "Invalid mobile number or employee ID"}), 400
 
         user_found = None
 
@@ -172,7 +173,7 @@ def get_single_user_details(username, record):
             email_body = f"User {username} is trying to check other users' information"
             send_email(["komalsaikiran05@gmail.com"], email_subject, email_body)
             log_debug(f"Email sent for user details not found for '{username}'")
-            return {"error": f"User details not found for {username}"}
+            return jsonify({"error": f"User details not found for {username}"}), 404
 
         if username in DATA['admins']:
             log_info(f"Admin '{username}' accessed details for '{name}': {user_found}")
@@ -180,7 +181,7 @@ def get_single_user_details(username, record):
             email_body = f"Admin '{username}' has accessed details:\n{user_found}"
             send_email(["komalsaikiran05@gmail.com"], email_subject, email_body)
             log_debug(f"Email sent for admin access by '{username}'")
-            return user_found
+            return jsonify(user_found), 200
 
         elif username.lower() == name:
             log_info(f"User '{username}' accessed their own details: {user_found}")
@@ -188,7 +189,7 @@ def get_single_user_details(username, record):
             email_body = f"User '{username}' has accessed their details:\n{user_found}"
             send_email(["komalsaikiran05@gmail.com"], email_subject, email_body)
             log_debug(f"Email sent for user accessing their own details '{username}'")
-            return user_found
+            return jsonify(user_found), 200
 
         else:
             log_warning(
@@ -198,7 +199,7 @@ def get_single_user_details(username, record):
             email_body = f"User '{username}' attempted to check others' record but lacks the necessary permissions."
             send_email(["komalsaikiran05@gmail.com"], email_subject, email_body)
             log_debug(f"Email sent for unauthorized access attempt by '{username}'")
-            return {'error': 'Normal users only have permission to view their own records'}
+            return jsonify({'error': 'Normal users only have permission to view their own records'}), 403
 
     except ValueError as error:
         log_error(f"Error in GET SINGLE USER DETAILS METHOD: {error}")
@@ -206,7 +207,7 @@ def get_single_user_details(username, record):
         email_body = f"ValueError occurred while '{username}' was checking for details of single user"
         send_email(["komalsaikiran05@gmail.com"], email_subject, email_body)
         log_debug(f"Email sent for error during record checking by '{username}'")
-        return {"error": str(error)}
+        return jsonify({"error": str(error)}), 400
 
     finally:
         log_info("-----------------GET Single User METHOD Ended-----------------\n")
@@ -228,7 +229,7 @@ def get_all_user_details(name):
             email_body = f"External user '{name}' attempted to access all user details."
             send_email(["komalsaikiran05@gmail.com"], email_subject, email_body)
             log_debug(f"Email sent for external user '{name}' attempt")
-            return {"error": f"External user '{name}' is not authorized to access these details"}
+            return jsonify({"error": f"External user '{name}' is not authorized to access these details"}), 403
 
         # Checks if not satisfies is admin(name) function and returns error if False 
         if not is_admin(name):
@@ -237,7 +238,7 @@ def get_all_user_details(name):
             email_body = f"User '{name}' has no access to view all users details"
             send_email(["komalsaikiran05@gmail.com"], email_subject, email_body)
             log_debug(f"Email sent for user accessing their own details '{name}'")
-            return {"error": "Not an Admin user so getting all records information failed"}
+            return jsonify({"error": "Not an Admin user so getting all records information failed"}), 403
 
         log_info(f"User details found: {name}")
         log_debug(f"All User details are  -->> {DATA['records']}")
@@ -256,7 +257,7 @@ def get_all_user_details(name):
             log_debug(f"Email sent for error during record checking by '{name}'")
 
         # Returns list of dictionaries 
-        return DATA['records']
+        return jsonify(['records']), 200
 
     except ValueError as error:
         log_error(f"Error in GET METHOD: {error}")
@@ -264,7 +265,7 @@ def get_all_user_details(name):
         email_body = f"ValueError occurred while '{name}' was checking for details of all users '{DATA['records']}'"
         send_email(["komalsaikiran05@gmail.com"], email_subject, email_body)
         log_debug(f"Email sent for error during record checking by '{name}'")
-        return {"error": str(error)}
+        return jsonify({"error": str(error)}), 400
     finally:
         log_info("-----------------GET All User Details METHOD Ended-----------------\n")
 
@@ -337,17 +338,17 @@ def patch_user_details(name, raw_DATA, record):
 
         if not user_found:
             log_warning(f"No user details found for mobile number: {mobile} and employee ID: {employee_id}")
-            return {"error": "User details not found"}
+            return jsonify({"error": "User details not found"}), 403
 
-        return {"success": "User details updated successfully"}
+        return jsonify({"success": "User details updated successfully"}), 200
 
     except ValueError as error:
         log_error(f"Error in PATCH METHOD for '{name}': {error}")
-        return {"error": str(error)}
+        return jsonify({"error": str(error)}), 400
 
     except Exception as error:
         log_error(f"Unexpected error in PATCH METHOD for '{name}': {error}")
-        return {"error": str(error)}
+        return jsonify({"error": str(error)}), 500
 
     finally:
         log_info("-----------------PATCH METHOD Ended----------------\n")
@@ -370,7 +371,7 @@ def delete_user_details(name, record):
             email_body = f"External user '{name}' attempted to delete user details."
             send_email(["komalsaikiran05@gmail.com"], email_subject, email_body)
             log_debug(f"Email sent for external user '{name}' attempt")
-            return {"error": f"External user '{name}' is not authorized to delete these details"}
+            return jsonify({"error": f"External user '{name}' is not authorized to delete these details"}), 403
 
         employee_id = record.get("employee_id")
         mobile = record.get("mobile")
@@ -393,7 +394,7 @@ def delete_user_details(name, record):
                           f"Mobile: {mobile}.")
             send_email(["komalsaikiran05@gmail.com"], email_subject, email_body)
             log_debug(f"Email sent for mobile mismatched '{name}' attempt")
-            return {"error": "Invalid mobile number."}
+            return jsonify({"error": "Invalid mobile number."}), 400
 
         if admin_operations(name) and name in DATA['admins']:
             log_info(f"Delete user details function started for {name}")
@@ -415,10 +416,11 @@ def delete_user_details(name, record):
                     deleted_user = DATA['records'].pop(x)
 
                     log_info(f"User deleted successfully: {deleted_user}")
-                    return deleted_user
+                    return jsonify(deleted_user), 200
 
-            log_warning(f"No user details found for mobile number {mobile}. Deletion not possible.")
-            return {"error": "User details not found."}
+            log_warning(f"No user details found for mobile number {mobile} and employee id {employee_id} "
+                        f"so Deletion not possible.")
+            return jsonify({"error": "User details not found."}), 404
 
         else:
             log_error(f"Unauthorized access: {name} does not have permission to delete users.")
@@ -426,7 +428,7 @@ def delete_user_details(name, record):
             email_body = f"Normal User '{name}' attempted to delete user details."
             send_email(["komalsaikiran05@gmail.com"], email_subject, email_body)
             log_debug(f"Email sent for Normal user '{name}' attempt")
-            return {"error": "Unauthorized access."}
+            return jsonify({"error": "Unauthorized access."}), 403
 
     except ValueError as error:
         log_error(f"Error in delete_user_details: {error}")
@@ -434,14 +436,14 @@ def delete_user_details(name, record):
         email_body = f"Value Error occurred for user '{name}' attempted to delete user details."
         send_email(["komalsaikiran05@gmail.com"], email_subject, email_body)
         log_debug(f"Email sent for Value Error for user '{name}' attempt")
-        return {"error": str(error)}
+        return jsonify({"error": str(error)}), 400
     except Exception as error:
         log_error(f"Unexpected error in delete_user_details: {error}")
         email_subject = f"Exception Error: while '{name}' Attempted to Delete User Details"
         email_body = f"Exception occurred for user '{name}' attempted to delete user details."
         send_email(["komalsaikiran05@gmail.com"], email_subject, email_body)
         log_debug(f"Email sent for exceptional error for user '{name}' attempt")
-        return {"error": str(error)}
+        return jsonify({"error": str(error)}), 500
     finally:
         log_info("-----------------Delete User Details METHOD Ended----------------- \n")
 
@@ -459,7 +461,7 @@ def reset_user_password(admin_name, user_mobile, user_employee_id, new_password)
             log_warning(f"Unauthorized attempt to reset password by '{admin_name}'")
             send_email(["komalsaikiran05@gmail.com"], f"Unauthorized Attempt to Reset Password by '{admin_name}'",
                        f"{admin_name} attempted to reset a user's password without authorization.")
-            return {"error": f"Unauthorized access by '{admin_name}'. Only admins can reset passwords."}
+            return jsonify({"error": f"Unauthorized access by '{admin_name}'. Only admins can reset passwords."}), 403
 
         logging.debug(f"User mobile: {user_mobile}, Employee ID: {user_employee_id}")
         # Find user in DATA['records']
@@ -473,7 +475,8 @@ def reset_user_password(admin_name, user_mobile, user_employee_id, new_password)
             log_warning(f"User with mobile '{user_mobile}' and employee ID '{user_employee_id}' not found.")
             send_email(["komalsaikiran05@gmail.com"], "User Not Found for Password Reset",
                        f"User with mobile '{user_mobile}' and employee ID '{user_employee_id}' not found.")
-            return {"error": f"User with mobile '{user_mobile}' and employee ID '{user_employee_id}' not found."}
+            return jsonify({"error": f"User with mobile '{user_mobile}' and "
+                                     f"employee ID '{user_employee_id}' not found."}), 400
 
         # Reset password
         user_found['password'] = new_password
@@ -482,15 +485,15 @@ def reset_user_password(admin_name, user_mobile, user_employee_id, new_password)
         send_email(["komalsaikiran05@gmail.com"], "Password Reset Successful",
                    f"Admin '{admin_name}' has reset the password for user with mobile '{user_mobile}' "
                    f"and employee ID '{user_employee_id}'.")
-        return {
+        return jsonify({
             "message": f"Password reset successful for user with mobile '{user_mobile}' "
-                       f"and employee ID '{user_employee_id}'."}
+                       f"and employee ID '{user_employee_id}'."}), 200
 
     except Exception as e:
         log_error(f"Error resetting password: {e}")
         send_email(["komalsaikiran05@gmail.com"], "Error in Reset User Password Method",
                    f"Error occurred while resetting password by '{admin_name}': {e}")
-        return {"error": f"Error resetting password: {e}"}
+        return jsonify({"error": f"Error resetting password: {e}"}), 500
 
     finally:
         log_info("Reset User Password METHOD Ended")
